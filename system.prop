@@ -15,6 +15,9 @@ ro.telephony.default_network=4
 # Default ecclist
 ro.ril.ecclist=112,911,#911,*911
 
+# Invokes parameters for needsOldRilFeature to fix Toroplus radio
+ro.telephony.ril.config=usevoicetechfordata,writeaidonly
+
 #Operator values
 ro.cdma.home.operator.alpha=Sprint
 ro.cdma.home.operator.numeric=310120
