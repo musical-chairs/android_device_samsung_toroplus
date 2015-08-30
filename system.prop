@@ -1,7 +1,6 @@
 #
 # system.prop for toroplus
 #
-
 rild.libpath=/vendor/lib/libsec-ril_lte.so
 rild.libargs=-d /dev/ttys0
 telephony.lteOnCdmaDevice=1
@@ -11,6 +10,9 @@ ro.telephony.call_ring.multiple=0
 
 # Default network
 ro.telephony.default_network=4
+
+# Store correct IMSI when retreived from SIMRecords and use it for Ruim Records
+ro.telephony.get_imsi_from_sim=true
 
 # Default ecclist
 ro.ril.ecclist=112,911,#911,*911
