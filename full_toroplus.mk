@@ -22,7 +22,7 @@
 #
 
 # Get the long list of APNs
-# PRODUCT_COPY_FILES += device/samsung/toroplus/test-apns-conf_sprint.xml:system/etc/apns-conf.xml
+PRODUCT_COPY_FILES := device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
 
 # Sounds for tuna
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage13.mk)
@@ -37,6 +37,7 @@ $(call inherit-product, device/samsung/toroplus/device.mk)
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_toroplus
 PRODUCT_DEVICE := toroplus
-PRODUCT_BRAND := Android
-PRODUCT_MODEL := AOSP on Toroplus
+PRODUCT_BRAND := Google
+PRODUCT_MODEL := Galaxy Nexus
+PRODUCT_MANUFACTURER := Samsung
 PRODUCT_RESTRICT_VENDOR_FILES := false
