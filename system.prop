@@ -2,7 +2,7 @@
 # system.prop for toroplus
 #
 rild.libpath=/vendor/lib/libsec-ril_lte.so
-rild.libargs=-d /dev/ttys0
+rild.libargs=-d /dev/ttys0 --
 telephony.lteOnCdmaDevice=1
 
 # Ril sends only one RIL_UNSOL_CALL_RING, so set call_ring.multiple to false
