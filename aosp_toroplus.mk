@@ -15,8 +15,6 @@
 #
 $(call inherit-product, device/samsung/toroplus/full_toroplus.mk)
 
-$(call inherit-product, vendor/zmod/config/common.mk)
-
 PRODUCT_NAME := aosp_toroplus
 
 PRODUCT_PACKAGES += \
